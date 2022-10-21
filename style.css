@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imagens/bg-repeat.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.conteudo-principal .conteudo-texto {
+    width: 500px;
+}
+
+.conteudo-principal .conteudo-texto .titulo {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.conteudo-principal .conteudo-texto .paragrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: azure;
+}
+
+.conteudo-principal .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    padding: 0 30px;
+    border-radius: 3px;
+}
+
+.conteudo-principal .formulario .input {
+    width: 500px;
+    height: 60px;
+    border-radius: 7px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.conteudo-principal .formulario .text-area {
+    width: 500px;
+    padding-bottom: 150px;
+    padding-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.conteudo-principal .formulario .texto-validacao {
+    display: block;
+}
+
+.formulario .texto-campo-obrigatorio {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 310px;
+    padding: 20px 0;
+}
+
+.botao {
+    margin-bottom: 35px;
+    padding: 15px;
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3CCC87;
+    color: azure;
+    font-weight: 700;
+    font-size: 20px;
+}
+.borda-verde{
+border: 2px solid #3CCC87;
+}
+.borda-vermelha{
+border: 2px solid #ed2045;   
+}
+.formulario .ativa-mensagem{
+margin-right: 375px;
+margin-top: 10px;
+color: #ed2045;
+display: block;
+font-size: 16px;
+font-weight: 500;
+font-family: 'Times New Roman', Times, serif;
+}
+.conteudo-principal .formulario .span {
+    display: none;
+}
+
+
+
+
+
