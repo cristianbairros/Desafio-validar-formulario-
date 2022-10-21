@@ -8,7 +8,7 @@ function validarForm() {
         if (campos[i].value.length >= 6) {
             campos[i].classList.add("borda-verde")
         }
-        else if (campos[i].value.length < 6) {
+        else{
             campos[i].classList.add("borda-vermelha")
             span[i].classList.remove("span")
         }
