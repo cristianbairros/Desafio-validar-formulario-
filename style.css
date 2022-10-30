@@ -24,7 +24,7 @@
     font-size: 28px;
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -33,30 +33,30 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 25px;
-    color: azure;
+    color: rgb(255, 255, 255);
 }
 
 .conteudo-principal .formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: azure;
-    padding: 0 30px;
-    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px;
+    border-radius: 10px;
 }
 
 .conteudo-principal .formulario .input {
-    width: 500px;
-    height: 60px;
+    width: 400px;
+    height: 30px;
     border-radius: 7px;
     outline: none;
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .conteudo-principal .formulario .text-area {
-    width: 500px;
+    width: 400px;
     padding-bottom: 150px;
     padding-top: 10px;
     border-radius: 10px;
@@ -74,41 +74,103 @@
     font-size: 20px;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 310px;
+    margin-right: 210px;
     padding: 20px 0;
 }
 
 .botao {
     margin-bottom: 35px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     border-radius: 5px;
     border: none;
     background-color: #3CCC87;
-    color: azure;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 20px;
+    text-align: center;
 }
-.borda-verde{
-border: 2px solid #3CCC87;
+
+.botao:hover {
+    cursor: pointer;
+    background-color: #28b06f;
 }
-.borda-vermelha{
-border: 2px solid #ed2045;   
+
+.borda-verde {
+    border: 2px solid #3CCC87;
 }
-.formulario .ativa-mensagem{
-margin-right: 375px;
-margin-top: 10px;
-color: #ed2045;
-display: block;
-font-size: 16px;
-font-weight: 500;
-font-family: 'Times New Roman', Times, serif;
+
+.borda-vermelha {
+    border: 2px solid #ed2045;
 }
+
+.formulario .ativa-mensagem {
+    margin-right: 280px;
+    margin-top: 10px;
+    color: #ed2045;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .conteudo-principal .formulario .span {
     display: none;
 }
 
+@media screen and (max-width:600px) {
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .conteudo-principal .conteudo-texto {
+        padding: 0px 20px 20px 20px;
+    }
 
+    .conteudo-principal .conteudo-texto .titulo {
+        font-size: 1.7em;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 
+    .conteudo-principal .conteudo-texto .paragrafo {
+        font-size: 1.3em;
+        text-align: center;
+    }
 
+    .conteudo-principal .formulario .input {
+        width: 350px;
+        height: 30px;
+        font-size: 15px;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+
+    .conteudo-principal .formulario .text-area {
+        width: 350px;
+        padding-bottom: 130px;
+        padding-top: 10px;
+        font-size: 15px;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+
+    .botao {
+        margin-bottom: 25px;
+        padding: 15px;
+        width: 350px;
+        font-size: 17px;
+    }
+
+    .formulario .texto-campo-obrigatorio {
+        font-size: 17px;
+        margin-right: 190px;
+        padding: 15px 0;
+    }
+
+    .formulario .ativa-mensagem {
+        margin-right: 230px;
+        margin-top: 5px;
+    }
+}

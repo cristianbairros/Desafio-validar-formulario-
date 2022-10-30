@@ -1,19 +1,18 @@
-let campos = document.querySelectorAll('#input');
+let campos = document.querySelectorAll('.campo');
 let span = document.querySelectorAll('#span');
 let botao = document.getElementById('botao');
 botao.addEventListener('click', () => {
-    for (let i = 0; i < campos.length; i++) {
-        if (campos[i].value.length >= 6) {
-            campos[i].classList.add("borda-verde")
-        }
-        else{
-            campos[i].classList.add("borda-vermelha")
-            span[i].classList.remove("span")
-        }
-    }
+
+campos.forEach((item,indice) =>{
+if(campos[indice].value !== '' ){  
+campos[indice].classList.remove("borda-vermelha")
+campos[indice].classList.add("borda-verde")
+}
+else{
+campos[indice].classList.add("borda-vermelha")  
+}
 });
-
-
+});
 
 
 
